@@ -141,12 +141,18 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+//FIX- colorOne is set to 'red', but the instruction asks to set it to 'blue'.
+//Should be colorOne = 'blue'.
 let colorOne = 'red';
+//FIX- colortwo is set to 'blue', but the instruction asks to set it to 'red'.
+//Should be colorTwo = 'red'.
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+//Fix- missing colorTwo set to purple'.
+//colorTwo = 'purple';
 }
 */
 
@@ -157,7 +163,9 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
-
+//Fix -Checks if temp is higher than 39 'OR' if time is greater or equal to  4.
+//Per the instructions, Should check if temp is greater than 39 'AND' time is greater or equal to 4.
+//That is ,replace the || symbol with && symbol.Therefore, if(temp > 39 && time >= 4).
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -172,6 +180,9 @@ let age = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+//Fix - the instruction asks if 'age' is greater than or equal to 'minAge',
+//Should be if(age >= minAge)
+//it is, therefore it should console.log 'Enter' instead of 'no entry'.
   console.log('no entry');
 } else {
   console.log('enter');
